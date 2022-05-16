@@ -41,6 +41,9 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 
     // Method to wrap legacy HAL with BiometricsFingerprint class
     static IBiometricsFingerprint* getInstance();
+   
+    Return<void> onShowUdfpsOverlay();
+    Return<void> onHideUdfpsOverlay();
 
     // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint
     // follow.
